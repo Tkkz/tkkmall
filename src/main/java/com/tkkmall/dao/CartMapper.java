@@ -1,4 +1,4 @@
-package com.tkkmmall.dao;
+package com.tkkmall.dao;
 
 import com.tkkmall.pojo.Cart;
 
@@ -14,4 +14,6 @@ public interface CartMapper {
     int updateByPrimaryKeySelective(Cart record);
 
     int updateByPrimaryKey(Cart record);
+
+
 }

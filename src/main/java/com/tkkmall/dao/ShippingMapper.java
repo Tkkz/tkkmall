@@ -1,4 +1,4 @@
-package com.tkkmmall.dao;
+package com.tkkmall.dao;
 
 import com.tkkmall.pojo.Shipping;
 
