@@ -20,7 +20,7 @@ public class ServerResponse<T> implements Serializable {
         this.status = status;
     }
 
-    public ServerResponse(int status, T data) {
+    private ServerResponse(int status, T data) {
         this.status = status;
         this.data = data;
     }
@@ -54,7 +54,7 @@ public class ServerResponse<T> implements Serializable {
     public static<T> ServerResponse<T> createBySuccess(){
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode());
     }
-    public static <T> ServerResponse<T> createBySuccess(String msg){
+    public static <T> ServerResponse<T> createBySuccessMessage(String msg){
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),msg);
     }
     public static <T> ServerResponse<T> createBySuccess(T data){
